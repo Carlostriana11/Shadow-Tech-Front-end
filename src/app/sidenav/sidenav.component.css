@@ -75,7 +75,7 @@
             color: #f3f3f3;
             text-decoration: none;
             border-radius: 0.625rem;
-            transition: all .5s ease;
+            transition: all .3s ease;
 
             .sidenav-link-icon{
                 font-size: 22px;
@@ -94,6 +94,15 @@
             background-color: #fff;
             color: #000;
         }
+    }
+}
+
+.active{
+    background-color: #fff;
+
+    .sidenav-link-icon,
+    .sidenav-link-text{
+        color: #000;
     }
 }
 
