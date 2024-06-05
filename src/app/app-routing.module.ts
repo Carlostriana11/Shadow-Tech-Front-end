@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { DashboardComponent } from './pages.nav/dashboard/dashboard.component';
 import { ProductsComponent } from './pages.nav/products/products.component';
 import { StatisticsComponent } from './statistics/statistics.component';
@@ -19,7 +20,6 @@ const routes: Routes = [
   {path: 'media', component: MediaComponent},
   {path: 'settings', component: SettingsComponent}
 ];
-
 
 
 @NgModule({
