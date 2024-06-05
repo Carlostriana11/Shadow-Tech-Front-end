@@ -17,6 +17,7 @@ import { SettingsComponent } from './pages.nav/settings/settings.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,19 +34,9 @@ import { SettingsComponent } from './pages.nav/settings/settings.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-  ]
-})
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
     AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-
-export class AppModule {}
+export class AppModule { }
