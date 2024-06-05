@@ -4,15 +4,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BodyComponent } from './body/body.component';
+import { BodyComponent } from './pages.nav/body/body.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProductsComponent } from './products/products.component';
+import { DashboardComponent } from './pages.nav/dashboard/dashboard.component';
+import { ProductsComponent } from './pages.nav/products/products.component';
 import { StatisticsComponent } from './statistics/statistics.component';
-import { CoupensComponent } from './coupens/coupens.component';
-import { PagesComponent } from './pages/pages.component';
-import { MediaComponent } from './media/media.component';
-import { SettingsComponent } from './settings/settings.component';
+import { CoupensComponent } from './pages.nav/coupens/coupens.component';
+import { PagesComponent } from './pages.nav/pages/pages.component';
+import { MediaComponent } from './pages.nav/media/media.component';
+import { SettingsComponent } from './pages.nav/settings/settings.component';
 
 
 
