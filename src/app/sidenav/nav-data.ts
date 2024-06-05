@@ -2,7 +2,7 @@ export const navbarData = [
     {
         routerLink:'dashboard',
         icon: 'fal fa-home',
-        label:'Dashboard'
+        label:'Home'
     },
     {
         routerLink:'products',
@@ -12,17 +12,17 @@ export const navbarData = [
     {
         routerLink:'coupens',
         icon: 'fal fa-tags',
-        label:'Coupens'
+        label:'offers'
     },
     {
         routerLink:'pages',
         icon: 'fal fa-file',
-        label:'Pages'
+        label:'Payments'
     },
     {
         routerLink:'media',
         icon: 'fal fa-camera',
-        label:'Media'
+        label:'social networks'
     },{
         routerLink:'settings',
         icon: 'fal fa-cog',
