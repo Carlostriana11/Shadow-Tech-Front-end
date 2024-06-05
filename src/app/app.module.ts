@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './pages.nav/body/body.component';
@@ -12,7 +13,6 @@ import { CoupensComponent } from './pages.nav/coupens/coupens.component';
 import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
-
 
 
 
@@ -33,19 +33,13 @@ import { SettingsComponent } from './pages.nav/settings/settings.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-  ]
-})
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(
+      withFetch()
+    )
+  ],
   bootstrap: [AppComponent]
 })
-
-export class AppModule {}
+export class AppModule { }
