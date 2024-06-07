@@ -13,6 +13,7 @@ import { CoupensComponent } from './pages.nav/coupens/coupens.component';
 import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -28,7 +29,8 @@ import { SettingsComponent } from './pages.nav/settings/settings.component';
     CoupensComponent,
     PagesComponent,
     MediaComponent,
-    SettingsComponent
+    SettingsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
