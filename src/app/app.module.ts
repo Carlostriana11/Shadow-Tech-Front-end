@@ -13,6 +13,7 @@ import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
 
 
 
@@ -31,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     PagesComponent,
     MediaComponent,
     SettingsComponent,
-    FooterComponent
+    FooterComponent,
+    HomeBannerComponent
   ],
   imports: [
     BrowserModule,
