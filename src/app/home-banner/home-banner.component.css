@@ -1,19 +1,18 @@
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+
 }
 
-:host {
-    display: block;
-    width: 100%;
-}
+
 
 /* Estilos del banner */
 .banner-wrapper {
     width: 100%;
-    height: 85vh; /* Ajusta la altura del banner para que ocupe toda la altura de la ventana */
+    height: 85vh; /**Ajusta la altura del banner para que ocupe toda la altura de la ventana*/
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -25,7 +24,7 @@
 
 .banner {
     width: 100%;
-    max-width: 600px; /* Limita el ancho del contenido para una mejor presentación */
+    max-width: 600px; /* Limita el ancho del contenido */
 }
 
 .banner-content {
@@ -47,15 +46,11 @@
 .cta-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #007bff;
+    background-color: #263238;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-.cta-btn:hover {
-    background-color: #0056b3;
 }
 
 /* Estilos responsive */
