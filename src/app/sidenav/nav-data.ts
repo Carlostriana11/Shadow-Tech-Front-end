@@ -24,6 +24,10 @@ export const navbarData = [
         icon: 'fal fa-camera',
         label:'social networks'
     },{
+        routerLink:'account',
+        icon: 'fal fa-user',
+        label:'Account'
+    },{
         routerLink:'settings',
         icon: 'fal fa-cog',
         label:'Settings'

@@ -7,6 +7,10 @@
     top: 0;
     transition: all .9s ease;
     background: #f4f7fa;
+    background-color: black;
+    /* background: url("../../img/banner.webp")no-repeat; */
+    background-size: cover;
+    background-position: center;
     padding: 3rem;
 }
 .body-trimmed{

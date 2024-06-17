@@ -13,6 +13,8 @@ import { CoupensComponent } from './pages.nav/coupens/coupens.component';
 import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
+import { FormComponent } from './form/form.component';
+import { AccountComponent } from './pages.nav/account/account.component';
 
 
 
@@ -28,12 +30,14 @@ import { SettingsComponent } from './pages.nav/settings/settings.component';
     CoupensComponent,
     PagesComponent,
     MediaComponent,
-    SettingsComponent
+    SettingsComponent,
+    FormComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     provideHttpClient(
