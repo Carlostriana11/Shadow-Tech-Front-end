@@ -14,6 +14,8 @@ import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
 import { AccountComponent } from './pages.nav/account/account.component';
+import { FormComponent } from './components/form/form.component';
+
 
 
 
@@ -30,7 +32,9 @@ import { AccountComponent } from './pages.nav/account/account.component';
     PagesComponent,
     MediaComponent,
     SettingsComponent,
-    AccountComponent
+    AccountComponent,
+    FormComponent
+
   ],
   imports: [
     BrowserModule,
