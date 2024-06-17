@@ -14,6 +14,7 @@ import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
 import { CardComponent } from './components/card/card.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 
@@ -30,7 +31,8 @@ import { CardComponent } from './components/card/card.component';
     PagesComponent,
     MediaComponent,
     SettingsComponent,
-    CardComponent
+    CardComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
