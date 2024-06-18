@@ -1,0 +1,80 @@
+/* product-banner.component.css */
+
+.lg-product-banner {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+}
+
+.banner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-content {
+    flex: 1;
+    padding-right: 20px; /* Espacio entre el texto y la imagen en pantallas grandes */
+    text-align: center; /* Centrar texto en dispositivos pequeños */
+}
+
+.banner-image {
+    flex: 1;
+    padding-left: 20px; /* Espacio entre la imagen y el texto en pantallas grandes */
+    text-align: center; /* Centrar imagen en dispositivos pequeños */
+}
+
+.lg-product-banner h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.lg-product-banner p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.lg-product-banner .btn-primary {
+    background-color: #00b8fc;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.lg-product-banner .btn-primary:hover {
+    background-color: #0096d6;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .banner-wrapper {
+        flex-direction: column;
+    }
+
+    .banner-content,
+    .banner-image {
+        padding: 0; /* Eliminar el espacio entre elementos en dispositivos pequeños */
+    }
+}
+
+/* Estilos para imágenes de ejemplo */
+.banner-image {
+    background-image: url('https://via.placeholder.com/800x600'); /* URL de la imagen de ejemplo */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Altura de la imagen en el banner */
+}
