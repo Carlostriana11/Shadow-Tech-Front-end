@@ -26,7 +26,7 @@ export const navbarData = [
     },{
         routerLink:'form',
         icon: 'fal fa-file-alt',
-        label:'Form'
+        label:'Forms'
     },{
         routerLink:'account',
         icon: 'fal fa-user',

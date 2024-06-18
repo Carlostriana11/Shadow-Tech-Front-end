@@ -15,6 +15,10 @@ import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
 import { AccountComponent } from './pages.nav/account/account.component';
 import { FormComponent } from './components/form/form.component';
+import { FormsComponent } from './pages.nav/forms/forms.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -33,13 +37,17 @@ import { FormComponent } from './components/form/form.component';
     MediaComponent,
     SettingsComponent,
     AccountComponent,
-    FormComponent
+    FormComponent,
+    FormsComponent,
+    LoginComponent,
+    RegisterComponent
 
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideHttpClient(
