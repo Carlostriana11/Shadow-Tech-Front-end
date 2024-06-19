@@ -1,43 +1,47 @@
-/* product-banner.component.css */
-
-.lg-product-banner {
-    background-color: #f2f2f2;
-    padding: 80px 0;
+.banner-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px; /* Altura predeterminada para pantallas grandes */
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Padding para dar espacio alrededor del contenido */
 }
 
-.banner-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Estilos para el contenido de texto */
+.banner-content h2 {
+    text-transform: uppercase;
 }
 
 .banner-content {
-    flex: 1;
-    padding-right: 20px; /* Espacio entre el texto y la imagen en pantallas grandes */
-    text-align: center; /* Centrar texto en dispositivos pequeños */
+    text-align: center;
+    color: #000; /* Color de texto negro para contrastar con el fondo claro */
+    max-width: 500px; /* Ancho máximo para el contenido */
 }
 
-.banner-image {
-    flex: 1;
-    padding-left: 20px; /* Espacio entre la imagen y el texto en pantallas grandes */
-    text-align: center; /* Centrar imagen en dispositivos pequeños */
+/* Estilos para la caja de texto */
+.text-box {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.lg-product-banner h1 {
-    font-size: 36px;
+/* Estilos para el título */
+.lg-product-banner h2 {
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
+/* Estilos para el párrafo */
 .lg-product-banner p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0; /* Quitar margen inferior del párrafo */
 }
 
+/* Estilos para el botón */
 .lg-product-banner .btn-primary {
     background-color: #00b8fc;
     color: #fff;
@@ -50,31 +54,63 @@
     transition: background-color 0.3s ease;
 }
 
+/* Estilos para el botón al pasar el mouse */
 .lg-product-banner .btn-primary:hover {
     background-color: #0096d6;
 }
 
-.banner-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media (max-width: 768px) {
+/* Media query para tabletas */
+@media (max-width: 1023px) {
     .banner-wrapper {
-        flex-direction: column;
+        height: 500px; /* Altura ajustada para tabletas */
     }
 
-    .banner-content,
-    .banner-image {
-        padding: 0; /* Eliminar el espacio entre elementos en dispositivos pequeños */
+    .banner-content {
+        max-width: 600px; /* Ajustar el ancho máximo para tabletas */
     }
 }
 
-/* Estilos para imágenes de ejemplo */
-.banner-image {
-    background-image: url('https://via.placeholder.com/800x600'); /* URL de la imagen de ejemplo */
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* Altura de la imagen en el banner */
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .banner-wrapper {
+        height: 400px; /* Altura ajustada para dispositivos móviles */
+    }
+
+    .lg-product-banner h2 {
+        font-size: 28px; /* Reducir el tamaño del título para dispositivos móviles */
+    }
+
+    .lg-product-banner p {
+        font-size: 16px; /* Reducir el tamaño del párrafo para dispositivos móviles */
+    }
+
+    .banner-content {
+        max-width: 90%; /* Ajustar el ancho máximo para dispositivos móviles */
+    }
+}
+
+/* Media query adicional para pantallas muy pequeñas */
+@media (max-width: 479px) {
+    .banner-wrapper {
+        height: 300px; /* Altura aún más ajustada para pantallas muy pequeñas */
+    }
+}
+
+/* Añadir imágenes de fondo según el tamaño de pantalla */
+@media (min-width: 1024px) {
+    .banner-wrapper {
+        background-image: url('https://resource.logitech.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/plp/mice/hero-desktop.png?v=1');
+    }
+}
+
+@media (max-width: 1023px) {
+    .banner-wrapper {
+        background-image: url('https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/plp/mice/hero-tablet.png?v=1');
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-wrapper {
+        background-image: url('https://resource.logitech.com/w_420,h_1024,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/target/plp/mice/mice-hero-mobile-short.png?v=1');
+    }
 }
