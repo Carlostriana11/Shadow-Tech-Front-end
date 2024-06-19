@@ -14,6 +14,8 @@
     background: #f4f7fa;
     background: black;
     padding: 5rem;
+    /* background: #ffffff; */
+    padding: 3rem;
 }
 .body-trimmed{
     width: calc(100% - 16.5625rem);

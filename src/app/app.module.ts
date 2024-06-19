@@ -19,7 +19,8 @@ import { FormsComponent } from './pages.nav/forms/forms.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { CardComponent } from './components/card/card.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 
@@ -40,8 +41,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormComponent,
     FormsComponent,
     LoginComponent,
-    RegisterComponent
-
+    RegisterComponent,
+    CardComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
