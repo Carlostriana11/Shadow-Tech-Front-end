@@ -1,6 +1,7 @@
-<app-form title="">
+<app-form [title]="title" [text1]="button" [text2]="text">
+    <form action="" [formGroup]="registroForm">
         <div class="input-box">
-            <input type="text" placeholder="Username" >
+            <input type="text" formControlName="username" placeholder="Username" >
             <i class='bx bxs-user r'></i>
         </div> 
         <div class="input-box">
@@ -11,4 +12,5 @@
             <input type="password" formControlName="password" placeholder="Password">
             <i class='bx bxs-lock-alt r'></i>
         </div>
+    </form>
 </app-form>
