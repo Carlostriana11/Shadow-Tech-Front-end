@@ -6,6 +6,8 @@ import { ProductsServices } from '../../services/products.services';
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
+
+
 export class CardComponent {
   products!: any ;
     constructor( private productServices: ProductsServices){}

@@ -1,4 +1,4 @@
-<app-form [title]="titulo" [text1]="button" [text2]="text">
+<app-form [title]="titulo">
     <form action="" [formGroup]="registroForm">
     <div class="input-box">
         <input  type="email" formControlName="email" placeholder="Email">
@@ -7,6 +7,12 @@
     <div  class="input-box">
         <input type="password" formControlName="password" placeholder="Password">
         <i class='bx bxs-lock-alt r'></i>
+    </div>
+
+    <button type="submit" class="btn">{{titulo}}</button>
+    
+    <div class="register-link">
+        <p>{{text2}} : <a href="#">{{enlace}}</a></p>
     </div>
     </form>
 </app-form>
