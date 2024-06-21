@@ -26,6 +26,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +48,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     RegisterComponent,
     CardComponent,
     ProductDetailComponent
+    
   ],
   imports: [
     BrowserModule,

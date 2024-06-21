@@ -14,6 +14,10 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { CardComponent } from './components/card/card.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
+
+
+
+
 const routes: Routes = [
 
   
@@ -24,13 +28,17 @@ const routes: Routes = [
   {path: 'pages', component: PagesComponent},
   {path: 'media', component: MediaComponent},
   {path: 'settings', component: SettingsComponent},
+
   {path: 'account', component: AccountComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'card', component:CardComponent },  
   {path: 'card/productDetail/:id', component: ProductDetailComponent},
-  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
+  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}, 
+
 ];
+
 
 
 @NgModule({
