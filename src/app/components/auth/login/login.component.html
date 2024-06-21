@@ -1,4 +1,5 @@
-<app-form [title]="titulo">
+<section class="login">
+    <app-form [title]="titulo">
     <form action="" [formGroup]="registroForm">
     <div class="input-box">
         <input  type="email" formControlName="email" placeholder="Email">
@@ -10,9 +11,10 @@
     </div>
 
     <button type="submit" class="btn">{{titulo}}</button>
-    
+
     <div class="register-link">
-        <p>{{text2}} : <a href="#">{{enlace}}</a></p>
+        <p>{{text2}} : <a routerLink="/register">{{enlace}}</a></p>
     </div>
     </form>
-</app-form>
+    </app-form>
+</section>

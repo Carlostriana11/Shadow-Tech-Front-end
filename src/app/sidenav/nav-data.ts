@@ -1,3 +1,5 @@
+import { RouterLink } from "@angular/router";
+
 export const navbarData = [
 
     {
@@ -29,7 +31,7 @@ export const navbarData = [
         icon: 'fal fa-file-alt',
         label:'Forms'
     },{
-        routerLink:'account',
+        routerLink:'login',
         icon: 'fal fa-user',
         label:'Account'
     },{

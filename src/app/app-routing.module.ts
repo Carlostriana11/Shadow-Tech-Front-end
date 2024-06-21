@@ -12,7 +12,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 // import { FormsComponent } from './pages.nav/forms/forms.component';
 import { CardComponent } from './components/card/card.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+// import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 
 const routes: Routes = [
@@ -30,7 +30,7 @@ const routes: Routes = [
   {path: 'form', component: FormsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'card', component:CardComponent },  
-  {path: 'card/productDetail/:id', component: ProductDetailComponent},
+  // {path: 'card/productDetail/:id', component: ProductDetailComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
 ];
 
