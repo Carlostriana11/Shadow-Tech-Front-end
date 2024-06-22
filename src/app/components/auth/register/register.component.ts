@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component,  } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+// import { RegisterServices } from '../../../services/register.services';
+import { RegisterService } from '../../../services/register.service';
 
 @Component({
   selector: 'app-register',
@@ -8,8 +10,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class RegisterComponent {
   title ="Register"
-  button ='login'
-  text = 'Do you already have an account'
+  enlace ='login'
+  text2 = 'Do you already have an account'
 
   registroForm: FormGroup = this.formBuilder.group({
     username:['',[]],
@@ -17,7 +19,15 @@ export class RegisterComponent {
     password: ['',[]]
   }) 
 
-  constructor(private formBuilder: FormBuilder){
+  constructor(private formBuilder: FormBuilder, private registerServices: RegisterService){}
 
-  }
+    onSubmit(): void{
+      if(this.registroForm.valid){
+        console.log(this.registroForm.valid)
+          this.registerServices.postRegister(this.registroForm.value).subscribe(data =>{
+            console.log(data)
+          })
+      }
+    }
+  
 }

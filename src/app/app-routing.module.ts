@@ -14,10 +14,6 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './product-deatail/product-deatail.component';
 
-
-
-
-
 const routes: Routes = [
 
   
@@ -31,12 +27,11 @@ const routes: Routes = [
 
   {path: 'account', component: AccountComponent},
   {path: 'register', component: RegisterComponent},
+  // {path: 'form', component: FormsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'card', component:CardComponent },  
   {path: 'card/productDetail/:id', component: ProductDeatailComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
-  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}, 
-
 ];
 
 
