@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 // import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
+import { EditformComponent } from './components/editform/editform.component';
 
 
 
@@ -46,7 +47,8 @@ import { CardFilterComponent } from './components/card-filter/card-filter.compon
     RegisterComponent,
     CardComponent,
     // ProductDetailComponent,
-    CardFilterComponent
+    CardFilterComponent,
+    EditformComponent
   ],
   imports: [
     BrowserModule,

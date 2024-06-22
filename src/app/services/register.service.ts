@@ -8,8 +8,7 @@ export class RegisterService {
 
   constructor(private http:HttpClient){}
 
-  postRegister( newProduct:any){
-    console.log(newProduct)
-      return this.http.post<any>('http://localhost:4000/api/auth/register', newProduct)
+  postRegister( newRegister:any){
+      return this.http.post<any>('http://localhost:4000/api/auth/register', newRegister)
   }
 }
