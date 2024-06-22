@@ -24,13 +24,12 @@ const routes: Routes = [
   {path: 'pages', component: PagesComponent},
   {path: 'media', component: MediaComponent},
   {path: 'settings', component: SettingsComponent},
-
   {path: 'account', component: AccountComponent},
   {path: 'register', component: RegisterComponent},
   // {path: 'form', component: FormsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'card', component:CardComponent },  
-  {path: 'card/productDetail/:id', component: ProductDeatailComponent},
+  {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
 ];
 

@@ -52,7 +52,6 @@ import { ProductDeatailComponent } from './product-deatail/product-deatail.compo
     RegisterComponent,
     CardComponent,
     ProductDeatailComponent
-  // CardFilterComponent
 
   ],
   imports: [
