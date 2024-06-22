@@ -12,4 +12,8 @@ export class  ProductsServices {
     getProducts(){
         return this.http.get<any>('http://localhost:4000/api/products')
     }
+    getproductById(id: string){
+        return this.http.get<any>(`http://localhost:4000/api/products/${id}`)
+    }
+    
 }

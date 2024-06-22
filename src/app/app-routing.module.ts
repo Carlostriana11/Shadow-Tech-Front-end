@@ -12,7 +12,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 // import { FormsComponent } from './pages.nav/forms/forms.component';
 import { CardComponent } from './components/card/card.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductDeatailComponent } from './product-deatail/product-deatail.component';
 
 
 
@@ -33,7 +33,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'card', component:CardComponent },  
-  {path: 'card/productDetail/:id', component: ProductDetailComponent},
+  {path: 'card/productDetail/:id', component: ProductDeatailComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}, 
 
