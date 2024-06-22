@@ -12,7 +12,8 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 // import { FormsComponent } from './pages.nav/forms/forms.component';
 import { CardComponent } from './components/card/card.component';
-import { ProductDeatailComponent } from './product-deatail/product-deatail.component';
+import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
+import { FormsComponent } from './pages.nav/forms/forms.component';
 
 const routes: Routes = [
 
@@ -27,7 +28,7 @@ const routes: Routes = [
 
   {path: 'account', component: AccountComponent},
   {path: 'register', component: RegisterComponent},
-  // {path: 'form', component: FormsComponent},
+  {path: 'form', component: FormsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'card', component:CardComponent },  
   {path: 'card/productDetail/:id', component: ProductDeatailComponent},

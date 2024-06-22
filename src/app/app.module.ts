@@ -20,7 +20,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
-import { ProductDeatailComponent } from './product-deatail/product-deatail.component';
+import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 
 
 
