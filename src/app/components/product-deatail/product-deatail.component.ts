@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, } from '@angular/router';
 import { map, tap } from 'rxjs';
-import { ProductsServices } from '../services/products.services';
+import { ProductsServices } from '../../services/products.services';
 
 @Component({
   selector: 'app-product-deatail',
