@@ -22,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 // import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
-import { EditformComponent } from './components/editform/editform.component';
+import { EditformComponent } from './components/editforms/editform/editform.component';
+import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 
 
 
@@ -48,7 +49,8 @@ import { EditformComponent } from './components/editform/editform.component';
     CardComponent,
     // ProductDetailComponent,
     CardFilterComponent,
-    EditformComponent
+    EditformComponent,
+    EditformstableComponent
   ],
   imports: [
     BrowserModule,

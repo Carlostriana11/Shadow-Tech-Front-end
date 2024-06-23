@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ProductsServices } from '../../services/products.services';
+import { ProductsServices } from '../../../services/products.services';
 
 @Component({
   selector: 'app-editform',

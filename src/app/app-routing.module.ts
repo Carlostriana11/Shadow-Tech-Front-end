@@ -14,6 +14,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { CardComponent } from './components/card/card.component';
 // import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
+import { EditformComponent } from './components/editforms/editform/editform.component';
 
 const routes: Routes = [
 
@@ -29,8 +30,11 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'form', component: FormsComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'editform', component: EditformComponent},
   {path: 'card', component:CardComponent },  
+
   // {path: 'card/productDetail/:id', component: ProductDetailComponent},
+
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
 ];
 
