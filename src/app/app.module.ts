@@ -21,13 +21,11 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
-
-
-
-
-
-// import { ProductDetailComponent } from './product-detail/product-detail.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
+// import { CardFilterComponent } from './components/card-filter/card-filter.component';
+import { EditformComponent } from './components/editforms/editform/editform.component';
+import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
+import { CardFilterComponent } from './components/card-filter/card-filter.component';
 
 
 
@@ -51,8 +49,12 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
     LoginComponent,
     RegisterComponent,
     CardComponent,
-    ProductDeatailComponent
+    ProductDeatailComponent,
   // CardFilterComponent
+    // ProductDetailComponent,
+    CardFilterComponent,
+    EditformComponent,
+    EditformstableComponent
 
   ],
   imports: [
