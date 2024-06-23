@@ -26,6 +26,7 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
 
 
 
+
 // import { ProductDetailComponent } from './product-detail/product-detail.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
 
@@ -51,8 +52,8 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
     LoginComponent,
     RegisterComponent,
     CardComponent,
-    ProductDeatailComponent
-
+    ProductDeatailComponent,
+    
   ],
   imports: [
     BrowserModule,

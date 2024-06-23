@@ -15,6 +15,7 @@ import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 
+
 const routes: Routes = [
 
   
