@@ -21,6 +21,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './product-deatail/product-deatail.component';
+import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
 
 
 
@@ -51,7 +52,8 @@ import { ProductDeatailComponent } from './product-deatail/product-deatail.compo
     LoginComponent,
     RegisterComponent,
     CardComponent,
-    ProductDeatailComponent
+    ProductDeatailComponent,
+    FormNewProductComponent
 
   ],
   imports: [
