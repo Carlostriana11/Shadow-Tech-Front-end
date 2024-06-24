@@ -18,7 +18,7 @@ import { FormComponent } from './components/form/form.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';

@@ -1,6 +1,6 @@
 <section class="editform">
     <app-form [title]="title">
-        <form  [formGroup]="registerForm">
+        <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 
             <div class="input-box">
                 <input  type="text" formControlName="name" placeholder="name">
@@ -20,7 +20,7 @@
 
             <select formControlName="category" class="selectO" name="categor">
                 <option value="" selected disabled hidden>category</option>
-                <option value="">hola</option>
+                <option value="" *ngFor="let category of categorys">{{category.name}}</option>
             </select>
 
             <div class="input-box">

@@ -23,6 +23,12 @@
             padding: 1.5rem;
             border-radius: .5rem;
 
+            a{
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+
             .image{
                 width: 100%;
                 img {

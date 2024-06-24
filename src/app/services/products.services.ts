@@ -16,6 +16,6 @@ export class  ProductsServices {
         return this.http.get<any>(`http://localhost:4000/api/products/${id}`)
     }
     UpdateProductById(id:string, newProduct:any){
-        return this.http.patch<any>(`http://localhost:4000/api/products/${id}`, newProduct)
+        return this.http.patch<any>(`http://localhost:4000/api/products/${ id }`, newProduct)
     }
 }

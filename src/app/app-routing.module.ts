@@ -16,12 +16,16 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { EditformComponent } from './components/editforms/editform/editform.component';
 
+
 const routes: Routes = [
 
   
   {path: 'dashboard', component: DashboardComponent},
+  {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
   {path: 'products', component: ProductsComponent},
+  {path: 'products/productDetail/:id', component: ProductDeatailComponent},
   {path: 'statistics', component: StatisticsComponent},
+  {path: 'coupens', component: CoupensComponent},
   {path: 'coupens', component: CoupensComponent},
   {path: 'pages', component: PagesComponent},
   {path: 'media', component: MediaComponent},
@@ -30,11 +34,10 @@ const routes: Routes = [
   {path: 'account', component: AccountComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'form', component: FormsComponent},
+  {path: 'form/editform/:id', component: EditformComponent},
   {path: 'login', component: LoginComponent},
   {path: 'editform', component: EditformComponent},
   {path: 'card', component:CardComponent },  
-  {path: 'card/productDetail/:id', component: ProductDeatailComponent},
-  // {path: 'card/productDetail/:id', component: ProductDetailComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
 ];
 
