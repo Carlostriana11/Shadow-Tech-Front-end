@@ -21,12 +21,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
-
-
-
-
-
-
 // import { ProductDetailComponent } from './product-detail/product-detail.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
@@ -35,6 +29,8 @@ import { EditformstableComponent } from './components/editforms/editformstable/e
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductBannerComponent } from './product-banner/product-banner.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { provideHttpClient } from '@angular/common/http';
 
 
 
@@ -56,7 +52,7 @@ import { ProductBannerComponent } from './product-banner/product-banner.componen
     AccountComponent,
     FormComponent,
     FormsComponent,
-
+    LoginComponent,
     RegisterComponent,
     CardComponent,
     ProductDeatailComponent,
@@ -69,7 +65,8 @@ import { ProductBannerComponent } from './product-banner/product-banner.componen
     EditformstableComponent,
     FormNewProductComponent,
     FooterComponent,
-    ProductBannerComponent
+    ProductBannerComponent,
+    HomeBannerComponent
 
   ],
   imports: [
@@ -77,8 +74,11 @@ import { ProductBannerComponent } from './product-banner/product-banner.componen
     BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule
+    
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

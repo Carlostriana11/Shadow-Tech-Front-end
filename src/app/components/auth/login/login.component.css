@@ -4,7 +4,8 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    padding: 9rem 0 0 0;
+    padding: 9rem 0 9rem 0;
+    
 }
 .wrapper h2{
     font-size: 36px;

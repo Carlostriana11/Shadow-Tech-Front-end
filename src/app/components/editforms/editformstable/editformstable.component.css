@@ -2,8 +2,9 @@
     width: 100%;
     height: 100%;
     max-width: 60%;
-    margin: 0 auto;
+    margin: 3rem 15rem;
     border: 2px solid black;
+    
 }
 .file_one{
     width: 10rem;

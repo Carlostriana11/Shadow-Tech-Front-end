@@ -1,6 +1,6 @@
 import { Component, } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { LoginService } from '../../../services/login.service';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { AuthService } from '../../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,19 +11,19 @@ export class LoginComponent {
   titulo = 'login'
   enlace = 'register'
   text2  = 'Don t have an account?'
+  registroForm!: FormGroup;
 
-  registroForm: FormGroup = this.formBuilder.group({
+  constructor( private authServices: AuthService){
+    this.registroForm = new FormGroup({
     
-    email:['',[]],
-    password: ['',[]]
-  }) 
-
-  constructor(private formBuilder: FormBuilder, private loginServices: LoginService){}
-
+      email: new FormControl ('',[]),
+      password: new FormControl ('',[])
+    }) 
+  }
     onSubmit(): void{
       if(this.registroForm.valid){
         console.log(this.registroForm.valid)
-          this.loginServices.postLogin(this.registroForm.value).subscribe(data =>{
+          this.authServices.postLogin(this.registroForm.value).subscribe(data =>{
             console.log(data)
           })
       }
