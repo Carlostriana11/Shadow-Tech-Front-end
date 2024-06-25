@@ -13,6 +13,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 // import { FormsComponent } from './pages.nav/forms/forms.component';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './product-deatail/product-deatail.component';
+import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
 
 const routes: Routes = [
 
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'card', component:CardComponent },  
   {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
+  {path: 'dashboard/forNewProduct', component: FormNewProductComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
 ];
 
