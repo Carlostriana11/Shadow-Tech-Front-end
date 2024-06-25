@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { provideHttpClient, withFetch } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './pages.nav/body/body.component';
@@ -34,7 +33,7 @@ import { EditformComponent } from './components/editforms/editform/editform.comp
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { ProductBannerComponent } from './product-banner/product-banner.component';
 
 
 
@@ -67,19 +66,14 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     EditformstableComponent,
     FormNewProductComponent,
     FooterComponent,
-    HomeBannerComponent
+    ProductBannerComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
-  providers: [
-    provideHttpClient(
-      withFetch()
-    )
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
