@@ -3,6 +3,13 @@
     width:100%;
     justify-content: center;
     padding: 20px 0;
+    color: white;
+    background: #233238;
+    margin: 5rem 0 0 3rem ;
+
+    a{
+        color: white;
+    }
 
 }
 
