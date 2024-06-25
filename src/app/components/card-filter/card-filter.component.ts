@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductsServices } from '../../services/products.services';
 import { Product } from '../../interfaces/product';
-import { NgFor } from '@angular/common';
+
 
 
 @Component({
@@ -11,22 +11,30 @@ import { NgFor } from '@angular/common';
 })
 export class CardFilterComponent {
   products!: any ;
+  
   constructor( private productServices: ProductsServices){}
 
   
-  ngOnInit(){
-      this.productServices.getProducts().subscribe( (data) => {
-        console.log(data.data)
+  
+  ngOnInit() {
+    this.productServices.getProducts().subscribe((data) => {
 
+      const lookForCategory = ['Electrodomésticos', 'non-category']
 
-        for (const products of data.data) {
-          let result = products.filter((product: Product) => product.category == 'Electrodomésticos');
-          return result
-        }
+      let firstProducts: { [key: string]: Product } = {};
 
-        // this.products = 
-      })
+      
+
+      for(const categoria of lookForCategory){
+          const product = data.data.find( (p: Product) => p.category === categoria)
+          
+          if(product){
+            firstProducts[categoria] = product;
+          }
+      }
+
+      this.products = Object.values (firstProducts);
+    
+  })
   }
-
-  productFilter(){}  
 }

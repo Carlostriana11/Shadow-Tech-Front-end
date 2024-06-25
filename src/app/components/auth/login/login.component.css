@@ -23,10 +23,11 @@
     border: none;
     outline: none;
     border:2px solid rgba(255,255,255, .2);
-    border-radius: 40px;
+    border-radius: .5rem;
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
+    margin: 0 0 .5rem 0;
 }
 .input-box input::placeholder{
 color: #fff;
@@ -104,7 +105,7 @@ button.btn {
     margin: 0 auto;
     /* padding: 1rem; */
     width: 100%;
-    border-radius: 2rem;
+    border-radius: .5rem;
     height: 45px;
     margin: 1rem 0;
     background: #fff;
@@ -113,10 +114,21 @@ button.btn {
     color: black;
     outline: none;
     border: none;
+    margin: 0 auto;
+    max-width: 35%;
+    font-size: 15px;
 }
 .register-link{
     text-align: center;
     display: block;
+}
+p {
+    margin: 1rem 0 0 0;
+}
+
+h2 {
+    margin: 0 0 1rem 0;
+
 }
 
 

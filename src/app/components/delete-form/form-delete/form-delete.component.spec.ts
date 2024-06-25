@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardFilterComponent } from './card-filter.component';
+import { FormDeleteComponent } from './form-delete.component';
 
-describe('CardFilterComponent', () => {
-  let component: CardFilterComponent;
-  let fixture: ComponentFixture<CardFilterComponent>;
+describe('FormDeleteComponent', () => {
+  let component: FormDeleteComponent;
+  let fixture: ComponentFixture<FormDeleteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CardFilterComponent]
+      declarations: [FormDeleteComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CardFilterComponent);
+    fixture = TestBed.createComponent(FormDeleteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

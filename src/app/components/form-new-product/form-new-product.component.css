@@ -23,11 +23,10 @@
     border: none;
     outline: none;
     border:2px solid rgba(255,255,255, .2);
-    border-radius: .5rem;
+    border-radius: 40px;
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
-    margin: 0 0 1rem 0 ;
 }
 .input-box input::placeholder{
 color: #fff;
@@ -41,8 +40,8 @@ color: #fff;
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
-
 }
+
 .remember-forgot {
     margin: 1rem;
 }
@@ -105,7 +104,7 @@ button.btn {
     margin: 0 auto;
     /* padding: 1rem; */
     width: 100%;
-    border-radius: .5rem;
+    border-radius: 2rem;
     height: 45px;
     margin: 1rem 0;
     background: #fff;
@@ -114,8 +113,6 @@ button.btn {
     color: black;
     outline: none;
     border: none;
-    max-width: 55%;
-    margin: 0 auto
 }
 
 .register-link{
@@ -123,6 +120,31 @@ button.btn {
     display: block;
 }
 
-p {
-    margin: 2rem 0 0 0;
+.error{
+    color: red;
+    font-style: italic;
+    height: 1.2rem;
+}
+
+.select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+   
+
+   
+
+    
+}
+
+.options{
+    color: black;
+    text-align: left;
 }

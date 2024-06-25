@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { provideHttpClient, withFetch } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './pages.nav/body/body.component';
@@ -21,6 +20,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
+import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
 
 
 
@@ -29,6 +29,13 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
 
 // import { ProductDetailComponent } from './product-detail/product-detail.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
+// import { CardFilterComponent } from './components/card-filter/card-filter.component';
+import { EditformComponent } from './components/editforms/editform/editform.component';
+import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
+import { CardFilterComponent } from './components/card-filter/card-filter.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProductBannerComponent } from './product-banner/product-banner.component';
+
 
 
 
@@ -49,11 +56,21 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
     AccountComponent,
     FormComponent,
     FormsComponent,
-    LoginComponent,
+
     RegisterComponent,
     CardComponent,
     ProductDeatailComponent,
     
+
+  // CardFilterComponent
+    // ProductDetailComponent,
+    CardFilterComponent,
+    EditformComponent,
+    EditformstableComponent,
+    FormNewProductComponent,
+    FooterComponent,
+    ProductBannerComponent
+
   ],
   imports: [
     BrowserModule,
@@ -61,11 +78,7 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [
-    provideHttpClient(
-      withFetch()
-    )
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
