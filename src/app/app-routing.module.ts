@@ -15,8 +15,8 @@ import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { EditformComponent } from './components/editforms/editform/editform.component';
-
 import { FooterComponent } from './footer/footer.component';
+import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
 
 const routes: Routes = [
 
@@ -31,7 +31,6 @@ const routes: Routes = [
   {path: 'pages', component: PagesComponent},
   {path: 'media', component: MediaComponent},
   {path: 'settings', component: SettingsComponent},
-
   {path: 'account', component: AccountComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'form', component: FormsComponent},
@@ -39,6 +38,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'editform', component: EditformComponent},
   {path: 'card', component:CardComponent },  
+  {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
+  {path: 'dashboard/forNewProduct', component: FormNewProductComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'Footer', component: FooterComponent}
 ];

@@ -21,6 +21,13 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
+import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
+
+
+
+
+
+// import { ProductDetailComponent } from './product-detail/product-detail.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
 // import { CardFilterComponent } from './components/card-filter/card-filter.component';
 import { EditformComponent } from './components/editforms/editform/editform.component';
@@ -58,7 +65,7 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     CardFilterComponent,
     EditformComponent,
     EditformstableComponent,
-
+    FormNewProductComponent,
     FooterComponent,
     HomeBannerComponent
   ],
