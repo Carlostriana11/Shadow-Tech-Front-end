@@ -12,6 +12,9 @@ export class FormNewProductComponent {
   registerformulario!: FormGroup
   titulo ='register product'
 
+  text2 = 'Editar Producto'
+  enlace = 'Editar'
+
   constructor(private ProductsServices: ProductsServices){
     this.registerformulario = new FormGroup({
       name: new FormControl("",[Validators.required]),
@@ -19,7 +22,7 @@ export class FormNewProductComponent {
       quantity: new FormControl("",[Validators.required, Validators.min(1)]),
       category: new FormControl("",[]),
       urlImage: new FormControl("",[Validators.required]),
-     
+    
 
     })
   }

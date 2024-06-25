@@ -1,7 +1,8 @@
 import { Component,  } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import {FormControl, FormGroup } from '@angular/forms';
 // import { RegisterServices } from '../../../services/register.services';
-import { RegisterService } from '../../../services/register.service';
+import { AuthService } from '../../../services/auth.service';
+
 
 @Component({
   selector: 'app-register',
@@ -12,19 +13,19 @@ export class RegisterComponent {
   title ="Register"
   enlace ='login'
   text2 = 'Do you already have an account'
+  registroForm!: FormGroup;
 
-  registroForm: FormGroup = this.formBuilder.group({
-    username:['',[]],
-    email:['',[]],
-    password: ['',[]]
-  }) 
-
-  constructor(private formBuilder: FormBuilder, private registerServices: RegisterService){}
-
-    onSubmit(): void{
+  constructor( private authServices: AuthService){
+    this.registroForm = new FormGroup({
+      username:new FormControl('',[]),
+      email:new FormControl('',[]),
+      password:new FormControl('',[])
+    }) 
+  }
+    onSubmit(){
       if(this.registroForm.valid){
         console.log(this.registroForm.valid)
-          this.registerServices.postRegister(this.registroForm.value).subscribe(data =>{
+          this.authServices.postRegister(this.registroForm.value).subscribe(data =>{
             console.log(data)
           })
       }

@@ -34,6 +34,8 @@ import { EditformstableComponent } from './components/editforms/editformstable/e
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductBannerComponent } from './product-banner/product-banner.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { provideHttpClient } from '@angular/common/http';
 
 
 
@@ -66,14 +68,19 @@ import { ProductBannerComponent } from './product-banner/product-banner.componen
     EditformstableComponent,
     FormNewProductComponent,
     FooterComponent,
-    ProductBannerComponent
+    ProductBannerComponent,
+    HomeBannerComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
+    
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
