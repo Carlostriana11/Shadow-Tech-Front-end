@@ -26,6 +26,9 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
 import { EditformComponent } from './components/editforms/editform/editform.component';
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
+
 
 
 
@@ -54,8 +57,10 @@ import { CardFilterComponent } from './components/card-filter/card-filter.compon
     // ProductDetailComponent,
     CardFilterComponent,
     EditformComponent,
-    EditformstableComponent
+    EditformstableComponent,
 
+    FooterComponent,
+    HomeBannerComponent
   ],
   imports: [
     BrowserModule,

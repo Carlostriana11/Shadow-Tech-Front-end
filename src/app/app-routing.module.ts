@@ -16,6 +16,7 @@ import { ProductDeatailComponent } from './components/product-deatail/product-de
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { EditformComponent } from './components/editforms/editform/editform.component';
 
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
 
@@ -38,7 +39,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'editform', component: EditformComponent},
   {path: 'card', component:CardComponent },  
-  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
+  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: 'Footer', component: FooterComponent}
 ];
 
 
