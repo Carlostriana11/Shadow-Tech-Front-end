@@ -1,0 +1,18 @@
+<section class="delete">
+    <app-form [title]="titulo">
+       <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+            <div class="input-box">
+                <input type="text" formControlName="name" placeholder="name">
+            </div>
+
+            <div class="input-box">
+                <input type="text" formControlName="description" placeholder="description">
+            </div>
+
+            <div class="input-box">
+                <input type="text" formControlName="price" placeholder="price">
+            </div>
+        </form>
+    </app-form>>
+</section>
