@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ProductsServices } from '../../services/products.services';
+import { Router } from '@angular/router';
+
+
+
 
 @Component({
   selector: 'app-form-new-product',
@@ -10,14 +14,15 @@ import { ProductsServices } from '../../services/products.services';
 export class FormNewProductComponent {
   categories:any;
   registerformulario!: FormGroup
-  titulo ='register product'
+  titulo ='Register Product'
 
   text2 = 'Editar Producto'
-  enlace = 'Editar'
+  enlace = 'Lista de productos'
 
-  constructor(private ProductsServices: ProductsServices){
+  constructor(private ProductsServices: ProductsServices, private router :Router ){
     this.registerformulario = new FormGroup({
       name: new FormControl("",[Validators.required]),
+      description: new FormControl ( '', []),
       price: new FormControl("",[Validators.required, Validators.min(0)]),
       quantity: new FormControl("",[Validators.required, Validators.min(1)]),
       category: new FormControl("",[]),
@@ -36,9 +41,10 @@ export class FormNewProductComponent {
         console.log(data)
       });
     this.registerformulario.reset(); // para recetear los campos del formulario 
+    //redirige a la pagina de editar formulario
+    this.router.navigate(['/editformlist']);
     }
 
-    
     
   }
   ngOnInit() {

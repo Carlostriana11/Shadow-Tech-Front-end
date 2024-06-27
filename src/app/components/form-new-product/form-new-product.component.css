@@ -1,10 +1,11 @@
 .register{
-    background: url("https://img.freepik.com/vector-gratis/fondo-pantalla-perspectiva-linea-sintetizador-retro-moda-efecto-humo_1017-43048.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1718755200&semt=sph")no-repeat;
+    background: url("https://assets.corsair.com/video/upload/f_auto,q_auto,so_0/akamai/hybris/homepage/refresh/CORSAIR_Header_2024_WQHD.jpg")no-repeat;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     padding: 5rem 0 5rem 0;
+    
 }
 .wrapper h2{
     font-size: 36px;
@@ -76,9 +77,11 @@ color: #fff;
     margin:20px 0 15px;
 }
 .register-link p a{
-    color: #fff;
+    color: black;
     text-decoration: none;
-    font-weight: 600
+    font-weight: 600;
+    background-color: white;
+    
 }
 
 .register-link p a:hover{
@@ -118,6 +121,8 @@ button.btn {
 .register-link{
     text-align: center;
     display: block;
+    height: 45px;
+    
 }
 
 .error{
@@ -145,4 +150,14 @@ button.btn {
 .options{
     color: black;
     text-align: left;
+}
+
+.edit-link {
+    width: 100%;
+    height: 45px;
+    font-weight: 500; 
+    background-color: white;
+    border-radius: .5rem;
+    padding: 12px 6.7rem;
+  
 }
