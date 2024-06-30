@@ -14,7 +14,7 @@
             <p>{{product[0].description}}</p><br>
             <h2>{{product[0].price}}</h2><br><br>
 
-            <a class="comprar" href="">Añadir al carrito</a>
+            <a class="comprar" *ngIf="showBuyButtom()">Añadir al carrito</a>
             
         </div>
     </div>

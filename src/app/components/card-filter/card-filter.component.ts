@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductsServices } from '../../services/products.services';
 import { Product } from '../../interfaces/product';
+import { AuthService } from '../../services/auth.service';
 
 
 
@@ -11,8 +12,9 @@ import { Product } from '../../interfaces/product';
 })
 export class CardFilterComponent {
   products!: any ;
+  user: any;
   
-  constructor( private productServices: ProductsServices){}
+  constructor( private productServices: ProductsServices, private authService: AuthService){}
 
   
   
@@ -34,7 +36,15 @@ export class CardFilterComponent {
       }
 
       this.products = Object.values (firstProducts);
-    
   })
+
+    this.authService.user$.subscribe( user => {
+      this.user = user;
+    })
   }
+    showBuyButton(){
+      return this.user && this.user.role && this.user.role.some((role:any) => role.name === 'User');
+    }
+
+  
 }
