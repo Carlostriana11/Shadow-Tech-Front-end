@@ -16,7 +16,7 @@ import { FormComponent } from './components/form/form.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
@@ -26,13 +26,16 @@ import { FormNewProductComponent } from './components/form-new-product/form-new-
 import { EditformComponent } from './components/editforms/editform/editform.component';
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { ProductBannerComponent } from './product-banner/product-banner.component';
-import { HomeBannerComponent } from './home-banner/home-banner.component';
+
 import { provideHttpClient } from '@angular/common/http';
 import { CouponComponent} from './components/coupons/coupons.component';
 import { CouponsDeleteComponent } from './components/coupons-delete/coupons-delete.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
+
 
 
 
@@ -73,7 +76,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
     
   ],
   providers: [
