@@ -31,6 +31,8 @@ import { ProductBannerComponent } from './product-banner/product-banner.componen
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { provideHttpClient } from '@angular/common/http';
 import { CouponComponent} from './components/coupons/coupons.component';
+import { CouponsDeleteComponent } from './components/coupons-delete/coupons-delete.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 
 
@@ -62,6 +64,8 @@ import { CouponComponent} from './components/coupons/coupons.component';
     ProductBannerComponent,
     HomeBannerComponent,
     CouponComponent,
+    CouponsDeleteComponent,
+    ShoppingCartComponent,
     // CardFilterComponent,
     // ProductDetailComponent,
   ],
