@@ -19,6 +19,7 @@ import { authGuard } from './guards/auth.guard';
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CouponComponent } from './components/coupons/coupons.component';
 import { FooterComponent } from './footer/footer.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 // import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
@@ -39,6 +40,7 @@ const routes: Routes = [
   {path: 'Footer', component: FooterComponent},
   {path: 'coupons', component: CouponComponent},
   {path: 'card', component:CardComponent },  
+  {path: 'shopping', component: ShoppingCartComponent },  
 
   {path: 'editform', component: EditformComponent},
   {path: 'editformlist', component: EditformstableComponent},
