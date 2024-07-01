@@ -7,6 +7,15 @@
     padding: 9rem 0 9rem 0;
     
 }
+@media (max-width: 786px) {
+    .login{
+        padding: 10rem 0 23.2rem 0;
+        max-height: 10%;
+    }
+    .r{
+        display: none;
+    }
+}
 .wrapper h2{
     font-size: 36px;
     text-align: center;

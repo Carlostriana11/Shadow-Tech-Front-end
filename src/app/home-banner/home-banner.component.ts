@@ -9,6 +9,6 @@ export class HomeBannerComponent {
 
 
   buttonScroll(){
-   
+
   }
 }

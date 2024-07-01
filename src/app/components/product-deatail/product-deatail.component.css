@@ -134,7 +134,10 @@ img.imagen {
         
     }
     .img-p{
+        width: 100%;
         height: 10rem;
+        display: block;
+        margin: 0 auto;
     }
 
     .total_container{
@@ -144,14 +147,36 @@ img.imagen {
         margin: 0;
         max-width: 100%;
     }
-    .detalle_producto h2{
+    .detalle_producto h3 {
         text-align: center;
+    }
+    
+    .detalle_producto h2 {
+        text-align: center;
+    }
+    .detalle_producto p{
+        
+        margin: 0  0 0 2rem;
+        padding: 0 3rem 0 0;
     }
     .detalle_producto a{
         width: 60%;
         display: block;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .text{
+        margin: 8rem 0 5rem 0;
+    }
+
+    .total_container{
+        margin: 0 0 13rem 0;
+    }
+    .total_container{
+        height: 500px;
+        width: 100%;
+        max-width: 100%;
     }
 
     

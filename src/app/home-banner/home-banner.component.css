@@ -33,6 +33,13 @@
     width: 100%;
 }
 
+@media (max-width: 786px) {
+    .banner-content{
+        padding: 149px 0;
+
+    } 
+}
+
 .banner-content h2 {
     font-size: 5em;
     margin-bottom: 20px;
@@ -73,6 +80,10 @@
     .banner-wrapper {
         background-image: url('https://resource.logitechg.com/w_420,h_1024,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/homepage/static-hpb/pro-x60-hpb-mobile.jpg?v=1');
     }
+    .banner-content h2 {
+        font-size: 3rem;
+    }
+    
 }
 
 /* Estilos para pantallas grandes */
