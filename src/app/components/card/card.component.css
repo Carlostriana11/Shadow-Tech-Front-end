@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 0 5rem 0;
+    background: #e8e8e8;
 
     .container-li{
         list-style: none;
@@ -86,7 +87,7 @@
 
                 .compra{
                     width: 100%;
-                    max-width: 60%;
+                    max-width: 100%;
                     a{
                         display: block;
                         width: fit-content;

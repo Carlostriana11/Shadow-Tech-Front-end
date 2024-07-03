@@ -17,8 +17,12 @@
     /* padding: 5rem; */
     /* background: #ffffff; */
     /* padding: 3rem; */
+}
 
-
+@media (max-width: 786px) {
+    .body{
+        height: 100%;
+    }
 }
 .body-trimmed{
     width: calc(100% - 16.5625rem);

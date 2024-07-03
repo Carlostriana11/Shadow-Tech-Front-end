@@ -1,6 +1,7 @@
 import { Component, Output,EventEmitter, OnInit, HostListener} from '@angular/core';
 import { navbarData } from './nav-data';
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
+import { AuthService } from '../services/auth.service';
 
 
 
@@ -45,6 +46,10 @@ export class SidenavComponent implements OnInit {
   collapsed = false;
   screenWidth = 0;
   navData = navbarData;
+  navegaty = navbarData[2];
+  user: any;
+  
+  constructor(private authServices: AuthService){}
 
   @HostListener('window:resize', ['event'])
   onResize(event: any){
@@ -57,6 +62,15 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit(): void{
       this.screenWidth = window.innerWidth;
+
+      this.authServices.user$.subscribe(user =>{
+        this.user = user;
+      })
+    console.log(this.navegaty)
+  }
+
+  showBuyButton(){
+    return this.user && this.user.role && this.user.role.some((role:any) => role.name === 'Admin')
   }
 
   toggleCollapse(): void{
@@ -68,4 +82,5 @@ export class SidenavComponent implements OnInit {
     this.collapsed = false;
     this.onTaggleSideNav.emit({collapsed:this.collapsed, screenWidth: this.screenWidth})
   }
+
 }

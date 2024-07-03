@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, } from '@angular/router';
 import { map, tap } from 'rxjs';
 import { ProductsServices } from '../../services/products.services';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-product-deatail',
@@ -10,10 +11,11 @@ import { ProductsServices } from '../../services/products.services';
 })
 export class ProductDeatailComponent {
 
-  constructor(private activeRoute: ActivatedRoute, private productsServices: ProductsServices){}
+  constructor(private activeRoute: ActivatedRoute, private productsServices: ProductsServices, private authServices: AuthService){}
 
-  productId!: string
-  product!: any
+  productId!: string;
+  product!: any;
+  user: any;
   
   ngOnInit(){
     this.activeRoute.params
@@ -35,6 +37,12 @@ export class ProductDeatailComponent {
       })
       
     })
+    this.authServices.user$.subscribe( user =>{
+      this.user = user
+    })
+  }
 
+  showBuyButtom(){
+    return this.user && this.user.role && this.user.role.some((role:any) => role.name === 'User');
   }
 }
