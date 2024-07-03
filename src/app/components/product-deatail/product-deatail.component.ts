@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, } from '@angular/router';
 import { map, tap } from 'rxjs';
-import { ProductsServices } from '../../services/products.services';
+import { ProductsServices } from '../../services/products.service';
 import { AuthService } from '../../services/auth.service';
 
 @Component({

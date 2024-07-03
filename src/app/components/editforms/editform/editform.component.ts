@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ProductsServices } from '../../../services/products.services';
+import { ProductsServices } from '../../../services/products.service';
 import { ActivatedRoute } from '@angular/router';
 import { CategoryService } from '../../../services/category.service';
 

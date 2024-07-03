@@ -18,7 +18,6 @@ import { authGuard } from './guards/auth.guard';
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CouponComponent } from './components/coupons/coupons.component';
 import { FooterComponent } from './footer/footer.component';
-import { CartComponent } from './components/cart/cart.component';
 // import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
@@ -39,7 +38,6 @@ const routes: Routes = [
   {path: 'Footer', component: FooterComponent},
   {path: 'coupons', component: CouponComponent},
   {path: 'card', component:CardComponent },  
-  {path: 'cart', component: CartComponent},
   {path: 'editform', component: EditformComponent},
   {path: 'editformlist', component: EditformstableComponent},
   {path: 'editformlist/editform/:id', component: EditformComponent},

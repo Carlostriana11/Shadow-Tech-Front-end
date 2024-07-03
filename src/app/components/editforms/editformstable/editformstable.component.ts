@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductsServices } from '../../../services/products.services';
+import { ProductsServices } from '../../../services/products.service';
 
 @Component({
   selector: 'app-editformstable',
