@@ -12,14 +12,13 @@ import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { EditformComponent } from './components/editforms/editform/editform.component';
-
 import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
 import { ProductsComponent } from './pages.nav/products/products.component';
 import { authGuard } from './guards/auth.guard';
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CouponComponent } from './components/coupons/coupons.component';
 import { FooterComponent } from './footer/footer.component';
-import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { CartComponent } from './components/cart/cart.component';
 // import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
@@ -40,8 +39,7 @@ const routes: Routes = [
   {path: 'Footer', component: FooterComponent},
   {path: 'coupons', component: CouponComponent},
   {path: 'card', component:CardComponent },  
-  {path: 'shopping', component: ShoppingCartComponent },  
-
+  {path: 'cart', component: CartComponent},
   {path: 'editform', component: EditformComponent},
   {path: 'editformlist', component: EditformstableComponent},
   {path: 'editformlist/editform/:id', component: EditformComponent},

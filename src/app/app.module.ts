@@ -26,15 +26,13 @@ import { FormNewProductComponent } from './components/form-new-product/form-new-
 import { EditformComponent } from './components/editforms/editform/editform.component';
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CardFilterComponent } from './components/card-filter/card-filter.component';
-
 import { ProductBannerComponent } from './product-banner/product-banner.component';
-
 import { provideHttpClient } from '@angular/common/http';
 import { CouponComponent} from './components/coupons/coupons.component';
 import { CouponsDeleteComponent } from './components/coupons-delete/coupons-delete.component';
-import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { CartComponent } from './components/cart/cart.component';
 
 
 
@@ -68,7 +66,7 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     HomeBannerComponent,
     CouponComponent,
     CouponsDeleteComponent,
-    ShoppingCartComponent,
+    CartComponent,
     // CardFilterComponent,
     // ProductDetailComponent,
   ],
