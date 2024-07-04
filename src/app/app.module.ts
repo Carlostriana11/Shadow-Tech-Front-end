@@ -12,6 +12,7 @@ import { PagesComponent } from './pages.nav/pages/pages.component';
 import { MediaComponent } from './pages.nav/media/media.component';
 import { SettingsComponent } from './pages.nav/settings/settings.component';
 import { AccountComponent } from './pages.nav/account/account.component';
+import { DeleteformComponent } from './components/delete-form/delete-form.component';
 import { FormComponent } from './components/form/form.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { LoginComponent } from './components/auth/login/login.component';
@@ -37,7 +38,6 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +57,7 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     CardComponent,
     ProductDeatailComponent,
     CardFilterComponent,
+    DeleteformComponent,
     EditformComponent,
     EditformstableComponent,
     FormNewProductComponent,
@@ -65,6 +66,7 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     HomeBannerComponent,
     CouponComponent,
     CouponsDeleteComponent,
+    
     // CardFilterComponent,
     // ProductDetailComponent,
   ],

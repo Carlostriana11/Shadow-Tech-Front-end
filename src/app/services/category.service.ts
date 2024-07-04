@@ -8,7 +8,7 @@ export class CategoryService {
 
   constructor(private http:HttpClient) {}
 
-  getCaterorys(){
+  getCategorys(){
     return this.http.get<any>('http://localhost:4000/api/categorys')
   }
 }

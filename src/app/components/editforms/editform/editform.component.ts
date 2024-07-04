@@ -35,7 +35,7 @@ export class EditformComponent {
   
   ngOnInit(){
 
-    this.categoryServices.getCaterorys().subscribe(data =>{
+    this.categoryServices.getCategorys().subscribe(data =>{
       console.log( data )
 
 

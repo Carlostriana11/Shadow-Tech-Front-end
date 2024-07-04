@@ -27,6 +27,9 @@ export class  ProductsServices {
         return this.http.get<any>('http://localhost:4000/api/categorys'  );
     }
     
+    deleteProductById(id: string) {
+        return this.http.delete<any>(`http://localhost:4000/api/products/${id}`);
+    }
 }
 
     
