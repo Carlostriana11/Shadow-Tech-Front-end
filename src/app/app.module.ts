@@ -17,7 +17,9 @@ import { FormComponent } from './components/form/form.component';
 import { FormsComponent } from './pages.nav/forms/forms.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
-import {  ReactiveFormsModule } from '@angular/forms';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { CardComponent } from './components/card/card.component';
 import { ProductDeatailComponent } from './components/product-deatail/product-deatail.component';
 import { FormNewProductComponent } from './components/form-new-product/form-new-product.component';
@@ -56,6 +58,13 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     RegisterComponent,
     CardComponent,
     ProductDeatailComponent,
+
+    
+
+  // CardFilterComponent
+    // ProductDetailComponent,
+
+
     CardFilterComponent,
     DeleteformComponent,
     EditformComponent,
@@ -69,6 +78,7 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     
     // CardFilterComponent,
     // ProductDetailComponent,
+
   ],
   imports: [
     BrowserModule,

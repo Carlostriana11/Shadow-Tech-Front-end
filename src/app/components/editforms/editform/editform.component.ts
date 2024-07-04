@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+<<<<<<< HEAD
 import { ProductsServices } from '../../../services/products.service';
 import { ActivatedRoute } from '@angular/router';
+=======
+import { ProductsServices } from '../../../services/products.services';
+import { ActivatedRoute, Route, Router } from '@angular/router';
+>>>>>>> 239d23a37b37b10c8f279c14268442d3940f6bb3
 import { CategoryService } from '../../../services/category.service';
 
 @Component({
@@ -21,9 +26,11 @@ export class EditformComponent {
   constructor(
     private activeRouter: ActivatedRoute,
     private productService: ProductsServices,
-    private categoryServices: CategoryService){
+    private categoryServices: CategoryService,
+private router:Router
+  ){
 
-    this.registerForm = new  FormGroup({
+    this.registerForm = new FormGroup({
       name: new FormControl( '', []),
       description: new FormControl ( '', []),
       price: new FormControl ('', []),
@@ -61,16 +68,22 @@ export class EditformComponent {
           category: product.category,
           urlImage: product?.urlImage   
         })
+       
       })
+     
     })
+    
   }
+
   onSubmit(){
     if(this.registerForm.valid){
       console.log(this.registerForm.value)
         this.productService.UpdateProductById( this.selectedId, this.registerForm.value).subscribe( data =>{
           console.log(data)
         })
+        this.router.navigate(['/editformlist'])
     }
+  
   }
 }
 
