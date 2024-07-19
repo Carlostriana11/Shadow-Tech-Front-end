@@ -51,6 +51,30 @@ export class AuthService {
 
   postRegister( newRegister:any){
     return this.http.post<any>('http://localhost:4000/api/auth/register', newRegister)
+
+    .pipe(
+      tap( (response: any)=>{
+        console.log(response)
+        
+        localStorage.setItem('token', response.token!);
+        
+        this.userSubject.next(response.user);
+    
+        if (response.ok){
+          this.router.navigate( [ 'login' ] );
+
+        }else{
+          this.router.navigate( [ 'register' ] )
+        }
+      }),
+
+      map( (response: any) =>{
+        catchError( error =>{
+          return of(false);
+    
+        })
+      })
+    )
   }
 
 

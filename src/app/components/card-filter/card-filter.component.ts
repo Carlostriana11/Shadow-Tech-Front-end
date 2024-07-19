@@ -21,7 +21,7 @@ export class CardFilterComponent {
   ngOnInit() {
     this.productServices.getProducts().subscribe((data) => {
 
-      const lookForCategory = ['Electrodomésticos', 'non-category']
+      const lookForCategory = ['teclados', 'mouse','pantallas','audifonos']
 
       let firstProducts: { [key: string]: Product } = {};
 

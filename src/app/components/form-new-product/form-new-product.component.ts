@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-<<<<<<< HEAD
-import { ProductsServices } from '../../services/products.service';
-=======
-import { ProductsServices } from '../../services/products.services';
 import { Router } from '@angular/router';
+import { ProductsServices } from '../../services/products.service';
 
 
-
->>>>>>> 239d23a37b37b10c8f279c14268442d3940f6bb3
 
 @Component({
   selector: 'app-form-new-product',

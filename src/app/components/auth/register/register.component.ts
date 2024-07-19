@@ -27,6 +27,8 @@ export class RegisterComponent {
         console.log(this.registroForm.valid)
           this.authServices.postRegister(this.registroForm.value).subscribe(data =>{
             console.log(data)
+
+            this.registroForm.reset();
           })
       }
     }

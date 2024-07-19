@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-<<<<<<< HEAD
+
 import { ProductsServices } from '../../../services/products.service';
-import { ActivatedRoute } from '@angular/router';
-=======
-import { ProductsServices } from '../../../services/products.services';
-import { ActivatedRoute, Route, Router } from '@angular/router';
->>>>>>> 239d23a37b37b10c8f279c14268442d3940f6bb3
+import { ActivatedRoute, Router } from '@angular/router';
 import { CategoryService } from '../../../services/category.service';
 
 @Component({
@@ -40,7 +36,7 @@ private router:Router
     })
   }
   
-  ngOnInit(){
+  ngOnInit(){ 
 
     this.categoryServices.getCategorys().subscribe(data =>{
       console.log( data )
@@ -68,9 +64,8 @@ private router:Router
           category: product.category,
           urlImage: product?.urlImage   
         })
-       
+      
       })
-     
     })
     
   }

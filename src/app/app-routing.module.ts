@@ -18,6 +18,7 @@ import { authGuard } from './guards/auth.guard';
 import { EditformstableComponent } from './components/editforms/editformstable/editformstable.component';
 import { CouponComponent } from './components/coupons/coupons.component';
 import { FooterComponent } from './footer/footer.component';
+import { DeleteformComponent } from './components/delete-form/delete-form.component';
 // import { authGuard } from './guards/auth.guard';
 
 
@@ -39,9 +40,11 @@ const routes: Routes = [
   {path: 'Footer', component: FooterComponent},
   {path: 'coupons', component: CouponComponent},
   {path: 'card', component:CardComponent },  
-  {path: 'editform', component: EditformComponent},
+  {path: 'editform', component: EditformComponent},  
+  {path: 'deleteform', component: DeleteformComponent},  
   {path: 'editformlist', component: EditformstableComponent},
   {path: 'editformlist/editform/:id', component: EditformComponent},
+  {path: 'editformlist/deleteform/:id', component: DeleteformComponent},
   {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
   {path: 'dashboard/forNewProduct', component: FormNewProductComponent},
   {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},

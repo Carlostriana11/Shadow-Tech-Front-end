@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ProductsServices } from '../../services/products.service'
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CategoryService } from '../../services/category.service';
 
 @Component({
@@ -20,7 +20,8 @@ export class DeleteformComponent {
   constructor(
     private activeRouter: ActivatedRoute,
     private productService: ProductsServices,
-    private categoryServices : CategoryService){
+    private categoryServices : CategoryService,
+    private router: Router){
       
     this.deleteForm = new FormGroup({
       name: new FormControl( '', []),
@@ -43,7 +44,7 @@ export class DeleteformComponent {
     this.activeRouter.params.subscribe( params =>{
       const id = params ['id'];
 
-      this.productService.deleteProductById(id).subscribe( data => {
+      this.productService.getproductById(id).subscribe( data => {
         console.log(data)
         const product = data.data[0]
 
@@ -68,6 +69,7 @@ export class DeleteformComponent {
       console.log(data)
 
     })
+    this.router.navigate(['/editformlist']);
   }
 }
 }

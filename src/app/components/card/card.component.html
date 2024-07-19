@@ -13,12 +13,12 @@
                 <p>{{ product.description}}</p>
             </div>
             <div class="preci">
-                <p>{{'$'+ product.price}}</p>
+                <p>{{'$'+ ' ' + product.price}}</p>
             </div>
             <div class="button-c-e">
                 <div class="compra">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="" *ngIf="showBuyButton()">agregar al carrito</a>
+                    <a href="" *ngIf="showBuyButton()">Add to cart</a>
                 </div>
 
             </div>

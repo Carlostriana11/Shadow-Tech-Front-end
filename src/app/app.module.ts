@@ -35,6 +35,7 @@ import { CouponComponent} from './components/coupons/coupons.component';
 import { CouponsDeleteComponent } from './components/coupons-delete/coupons-delete.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 
@@ -75,6 +76,7 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     HomeBannerComponent,
     CouponComponent,
     CouponsDeleteComponent,
+    MenuComponent,
     
     // CardFilterComponent,
     // ProductDetailComponent,

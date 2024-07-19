@@ -21,7 +21,7 @@
             <td class="container-category"> {{product.category}}</td>
             <td>
                 <a [routerLink]="['editform',product._id]" class="btn edit"> edit</a>
-                <a routerLink="" class="btn delete" >delete</a>
+                <a [routerLink]="['deleteform',product._id]" class="btn delete" >delete</a>
             </td>
         </tr>
     </tbody>
