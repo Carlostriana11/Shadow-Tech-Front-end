@@ -14,8 +14,6 @@
     }
     .r{
         display: none;
-
-        
     }
 }
 
@@ -40,7 +38,7 @@
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 1rem 0;
 }
 .input-box input::placeholder{
 color: #fff;
@@ -48,12 +46,12 @@ color: #fff;
 .input-box i{
     position: absolute;
     transform: translateY(100%);
-    font-size: 20px;
+    font-size: 1.2 rem;
 }
 .wrapper .remember-forgot{
     display: flex;
     justify-content: space-between;
-    font-size: 14.5px;
+    font-size: 30px;
 
 }
 .remember-forgot {
@@ -113,10 +111,10 @@ h2 {
 }
 button.btn {
     cursor: pointer;
-    /* text-align: center; */
+
     display: block;
     margin: 0 auto;
-    /* padding: 1rem; */
+   
     width: 100%;
     border-radius: .5rem;
     height: 45px;
@@ -131,6 +129,7 @@ button.btn {
     max-width: 35%;
     font-size: 15px;
 }
+
 .register-link{
     text-align: center;
     display: block;
@@ -144,7 +143,8 @@ h2 {
 
 }
 
-@media all and (min-width:768px) {
+
+ @media all and (min-width:768px) {
     .login{
         background: url("https://assets.corsair.com/video/upload/f_auto,q_auto,so_0/akamai/hybris/homepage/refresh/CORSAIR_Header_2024_WQHD.jpg")no-repeat;
         width: 100%;
@@ -154,5 +154,4 @@ h2 {
         padding: 9rem 0 9rem 0;
         
     }
-}
-
+} 
