@@ -131,7 +131,7 @@ img.imagen {
     .conteiner{
         /* border: solid 5px; */
         width: 100%;
-        height: 80%;
+        
         display: flex;
         flex-direction: column;
         box-shadow: 2px 3px 28px #263238;
@@ -179,7 +179,7 @@ img.imagen {
         margin: 0 0 13rem 0;
     }
     .total_container{
-        height: 500px;
+        height: 100%;
         width: 100%;
         max-width: 100%;
     }
