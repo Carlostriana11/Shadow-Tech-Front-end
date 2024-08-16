@@ -11,8 +11,7 @@ export class AuthService {
   private authData!:any
   private userSubject = new BehaviorSubject<any>(null);
   user$ = this.userSubject.asObservable();
-  private url:any = "http://3.21.37.162:4000/api"
-
+  private url:any = "http://52.14.34.161:4000/api"
   constructor(private http:HttpClient, private router: Router) {}
 
 
