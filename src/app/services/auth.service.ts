@@ -28,10 +28,10 @@ export class AuthService {
         this.userSubject.next(response.user);
     
         if (response.ok){
-          this.router.navigate( [ 'dashboard' ] );
+          this.router.navigate(['dashboard']);
 
         }else{
-          this.router.navigate( [ 'register' ] )
+          this.router.navigate(['register'])
         }
       }),
 
@@ -55,7 +55,7 @@ export class AuthService {
     .pipe(
       tap( (response: any)=>{
         console.log(response)
-        
+        localStorage.setItem(' user ', JSON.stringify(response.user));
         localStorage.setItem('token', response.token!);
         
         this.userSubject.next(response.user);

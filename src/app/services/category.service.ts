@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CategoryService {
-
+  private url:any = "http://52.14.34.161:4000/api"
   constructor(private http:HttpClient) {}
 
   getCategorys(){
-    return this.http.get<any>('http://localhost:4000/api/categorys')
+    return this.http.get<any>(`${this.url}/categorys`)
   }
 }

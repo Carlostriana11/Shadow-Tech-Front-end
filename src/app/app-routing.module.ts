@@ -19,42 +19,34 @@ import { EditformstableComponent } from './components/editforms/editformstable/e
 import { CouponComponent } from './components/coupons/coupons.component';
 import { FooterComponent } from './footer/footer.component';
 import { DeleteformComponent } from './components/delete-form/delete-form.component';
-// import { authGuard } from './guards/auth.guard';
-
 
 const routes: Routes = [
-
-  
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
-  {path: 'products', component: ProductsComponent},
-  {path: 'products/productDetail/:id', component: ProductDeatailComponent},
-  {path: 'statistics', component: StatisticsComponent},
-  {path: 'pages', component: PagesComponent},
-  {path: 'media', component: MediaComponent},
-  {path: 'settings', component: SettingsComponent},
-  {path: 'account', component: AccountComponent},
-  {path: 'register', component: RegisterComponent},
-  {canActivate: [ authGuard ], path: 'form', component: FormsComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'Footer', component: FooterComponent},
-  {path: 'coupons', component: CouponComponent},
-  {path: 'card', component:CardComponent },  
-  {path: 'editform', component: EditformComponent},  
-  {path: 'deleteform', component: DeleteformComponent},  
-  {path: 'editformlist', component: EditformstableComponent},
-  {path: 'editformlist/editform/:id', component: EditformComponent},
-  {path: 'editformlist/deleteform/:id', component: DeleteformComponent},
-  {path: 'dashboard/productDetail/:id', component: ProductDeatailComponent},
-  {path: 'dashboard/forNewProduct', component: FormNewProductComponent},
-  {path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
-  
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard/productDetail/:id', component: ProductDeatailComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'products/productDetail/:id', component: ProductDeatailComponent },
+  { path: 'statistics', component: StatisticsComponent },
+  { path: 'pages', component: PagesComponent },
+  { path: 'media', component: MediaComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'register', component: RegisterComponent },
+  { canActivate: [authGuard], path: 'form', component: FormsComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'coupons', component: CouponComponent },
+  { path: 'card', component: CardComponent },
+  { canActivate: [authGuard], path: 'editform', component: EditformComponent },
+  { canActivate: [authGuard], path: 'deleteform', component: DeleteformComponent },
+  { canActivate: [authGuard], path: 'editformlist', component: EditformstableComponent },
+  { canActivate: [authGuard], path: 'editformlist/editform/:id', component: EditformComponent },
+  { canActivate: [authGuard], path: 'editformlist/deleteform/:id', component: DeleteformComponent },
+  { path: 'dashboard/forNewProduct', component: FormNewProductComponent },
+  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
 ];
-
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

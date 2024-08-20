@@ -17,18 +17,18 @@ export class  ProductsServices {
     }
 
     UpdateProductById(id:string, newProduct:any){
-        return this.http.patch<any>(`${this.url}/api/products/${ id }`,newProduct)
+        return this.http.patch<any>(`${this.url}/products/${ id }`,newProduct)
     }
 
     createProduct(newProduct:any){
-        return this.http.post<any>(`${this.url}/api/products`, newProduct)
+        return this.http.post<any>(`${this.url}/products`, newProduct)
     }
     getCategories() {
-        return this.http.get<any>(`${this.url}/api/categorys`);
+        return this.http.get<any>(`${this.url}/categorys`);
     }
     
     deleteProductById(id: string) {
-        return this.http.delete<any>(`${this.url}/api/products/${id}`);
+        return this.http.delete<any>(`${this.url}/products/${id}`);
     }
 }
 
