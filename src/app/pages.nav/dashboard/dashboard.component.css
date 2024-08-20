@@ -9,7 +9,7 @@
     font-size: 4rem; 
     
 }
-@media(min-width:370px){
+@media(min-width:550px){
     .title{
         text-align: center;
         padding: 2rem 0;

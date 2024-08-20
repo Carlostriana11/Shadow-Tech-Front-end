@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
 
 
 interface SideNavToggle{
@@ -20,5 +21,9 @@ export class AppComponent {
   onTaggleSideNav(data: SideNavToggle): void{
     this.screenWidth = data.screenWidth;
     this.isSideNavCollapsed = data.collapsed;
+  }
+  constructor(private authService: AuthService){}
+  ngOnInit(){
+    this.authService.initializeSession();
   }
 }
